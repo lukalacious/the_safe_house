@@ -49,3 +49,10 @@ def box_histo(data, feature, figsize = (12, 7), kde = False, bins = None):
     ax_hist2.axvline(
         data[feature].median(), color = "black", linestyle = "-"
     )                  
+
+_________________
+
+# create histograms of all numerical columns (define num_cols first)
+df[num_cols].hist(figsize = (14, 14))
+
+plt.show()
